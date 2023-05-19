@@ -7,17 +7,19 @@ export default component$(() => {
   return (
     <header>
       <nav>
-        <img src="/mario_block.jpeg" alt="logo" />
-        <h1>Mario Life</h1>
+        <Link href="/">
+          <img src="/mario_block.jpeg" alt="logo" />
+          <h1>Mario Life</h1>
+        </Link>
         <ul>
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about/">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/contact/">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

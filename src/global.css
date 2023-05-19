@@ -1,3 +1,11 @@
+/**
+ * Tailwind CSS imports
+ * View the full documentation at https://tailwindcss.com
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --theme-yellow: #f6Cd25;
   --theme-red: #dc163b;
@@ -41,4 +49,36 @@ footer {
   padding: 20px;	
   text-align: center;
   flex-grow: 1;
+}
+
+button {
+  background-color: var(--theme-red);
+  border: 0;
+  padding: 8px 10px;
+  margin: 15px 15px 15px 0;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: 300ms;
+  letter-spacing: 2px;
+  font-family: "Poppins";
+}
+
+button:hover {
+  background-color: var(--theme-yellow-hover);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+
+
+.blogs {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+main {
+  min-height: 85vh;
 }
